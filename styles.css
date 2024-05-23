@@ -1,0 +1,575 @@
+:root {
+  --color-primary: #ddb695;
+  --color-secondary: red;
+
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+
+  --section-padding: 5rem 2rem;
+  @media screen and (min-width: 600px) {
+    --section-padding: 7rem 2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Optima", "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* TYPO */
+
+h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Optima", sans-serif;
+  margin-bottom: 2%;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Optima", sans-serif;
+  margin-bottom: 2%;
+}
+
+/* BUTTON */
+
+footer {
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  z-index: 4;
+  background-color: #ddb695;
+  box-shadow: 0px 1px 15px #0000009c;
+}
+
+nav img {
+  z-index: 3;
+  position: relative;
+  display: block;
+  padding-left: 20%;
+  padding-bottom: 2;
+  margin-bottom: -25rem;
+}
+
+nav {
+  margin-top: 3rem;
+
+  li {
+    font-family: "Optima", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
+    position: relative;
+
+    a {
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0px 0.5px 3px #0000009c;
+    }
+  }
+}
+
+.grid-cols-6 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+#massschuh_div {
+  height: 30rem;
+
+  p {
+    display: flex;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #707070;
+  }
+
+  img {
+    margin-top: -15rem;
+    margin-right: -40rem;
+  }
+}
+
+#jubilaeum {
+  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  p {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: #707070;
+  }
+
+  h1 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: #707070;
+  }
+
+  img {
+    opacity: 0.1;
+    rotate: 22deg;
+    margin-top: -15rem;
+  }
+
+  hr.trenner {
+    display: inherit;
+  }
+}
+
+/* HR Styles */
+
+hr.underline {
+  border-top: 10px;
+  border: solid;
+  color: #ddb695;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+hr.trenner {
+  border: solid 15px;
+  color: #ddb695;
+  align-items: center;
+}
+
+#meilensteine {
+  padding-top: 2%;
+
+  h1 {
+    color: #fff;
+    margin-bottom: 2%;
+  }
+
+  h3 {
+    text-decoration: underline #ddb695;
+    text-decoration-thickness: 4px;
+  }
+
+  p {
+    font-family: "Optima", sans-serif;
+    padding-top: 1%;
+  }
+}
+
+#leistungen {
+  #intro {
+    max-width: 1200px;
+  }
+
+  .flex-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    height: 4rem;
+    width: 15rem;
+    background-color: #fff;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Optima", sans-serif;
+    font-weight: bold;
+    color: #ddb695;
+  }
+
+  .button:hover {
+    background-color: #ddb695;
+    border: solid 3px;
+    border-radius: 12px;
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  img {
+    height: 7rem;
+    margin-right: 1rem;
+    filter: invert(100%);
+  }
+
+  h3 {
+    margin-left: -1.5rem;
+    color: #fff;
+    align-items: center;
+  }
+
+  p {
+    color: #fff;
+    width: 70%;
+    padding-left: 4rem;
+  }
+
+  #Reparieren {
+    margin-bottom: 1rem;
+    padding: 3rem 10rem 5rem 10rem;
+    background-color: #ddb695;
+  }
+
+  #Verbessern {
+    margin-bottom: 1rem;
+    padding: 3rem 10rem 5rem 10rem;
+    background-color: #ddb695;
+  }
+
+  #Kreieren {
+    margin-bottom: 1rem;
+    padding: 3rem 0rem 5rem 5rem;
+    background-color: #ddb695;
+  }
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  margin-bottom: -0.3%;
+  max-width: 100%;
+}
+
+.mySlides {
+  display: none;
+
+  img {
+    object-fit: cover;
+    height: 91vh;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#jubilaeum,
+#intro,
+#massschuhe,
+#stimmen,
+#pflegetipps {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TIMELINE */
+#meilensteine {
+  background-image: url(img/Bild_15.jpg);
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #ddb695;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 7%;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  border: #ddb695;
+  border-width: 20px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ddb695;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  border: 4px solid #ddb695;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* Maßschuhe */
+
+/* This code snippet sets up a flex container with two containers inside.
+When hovering over one of the containers, it expands to take up 50% of the width and the image inside
+scales down to fit the container. */
+
+.flex-wrapper {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  box-sizing: border-box;
+}
+
+.wrap-container {
+  flex: 1;
+  margin: 0 1%;
+  overflow: hidden;
+  transition: all ease 0.8s;
+  line-height: 0;
+}
+
+.wrap-container > img {
+  width: 200%;
+  transition: all ease 0.8s;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+}
+
+.wrap-container:hover {
+  flex: 1 1 50%;
+}
+
+.wrap-container:hover > img {
+  width: 100%;
+  height: 90%;
+}
+
+/* Stimmen Sektion */
+
+.grid-container--stimmen {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  gap: 20px;
+}
+.grid-item--stimmen {
+  display: grid;
+  background-color: #fff;
+  border: 1px solid #ddb695;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 17px;
+
+  .stimmen-text {
+    width: 15rem;
+  }
+  img {
+    object-fit: contain;
+    grid-column-start: 2;
+  }
+
+  .testimonial-name {
+    grid-column-start: 2;
+    margin-top: -1em;
+    margin-left: 3em;
+  }
+
+  .quote {
+    margin-top: -5em;
+    margin-left: 6em;
+  }
+}
+
+/* Pflegetipps Sektion */
+
+.p-numbers {
+  display: block;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Optima", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 110px;
+}
+
+.box-number {
+  width: 110px;
+  height: 110px;
+  background-color: #ddb695;
+}
+
+.box-content {
+  flex: 1;
+  height: 90px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+@media (max-width: var(--bp-tablet)) {
+  .flex-container {
+    height: 500px;
+    flex-direction: column;
+  }
+}
